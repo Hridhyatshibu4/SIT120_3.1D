@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Use BASE_URL to specify the correct base URL -->
+    <link rel="icon" :href="`${BASE_URL}favicon.ico`">
+    <title>Task Tracker Pro</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry, but Task Tracker Pro doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/goals-and-achievements">Goals & Achievements</router-link></li>
+          <li><router-link to="/learning-module">Learning Module</router-link></li>
+          <li><router-link to="/project-canvas">Project Canvas</router-link></li>
+          <li><router-link to="/navigation-map">Navigation Map</router-link></li>
+          <li><router-link to="/chat-portal">Chat Portal</router-link></li>
+        </ul>
+      </nav>
+      
+      <!-- Vue App -->
+      <!-- The Vue app will inject the components here -->
+    </div>
+
+    <!-- Vue Components -->
+    <!-- Use BASE_URL to specify the correct base URL -->
+    <script :src="`${BASE_URL}js/chunk-vendors.js`"></script>
+    <script :src="`${BASE_URL}js/app.js`"></script>
+  </body>
+</html>
